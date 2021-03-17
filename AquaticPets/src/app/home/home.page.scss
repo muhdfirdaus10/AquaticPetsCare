@@ -1,0 +1,91 @@
+form {
+  margin-top: 100px;
+}
+
+ion-content{
+  --background: rgb(181, 174, 184);
+  --background: url(/assets/img/wallpaper5.jpg) no-repeat center/cover fixed;
+
+}
+
+
+body{
+  background-color: blueviolet;
+}
+
+.bg-image {
+  --background: url('C:/Users/Public/AquaticPets/src/assets/img/login1.jpeg');
+
+  -webkit-filter: blur(10px);
+  -moz-filter: blur(10px);
+  -o-filter: blur(10px);
+  -ms-filter: blur(10px);
+  filter: blur(0px);
+}
+
+.wrap-input {
+  border-radius: 20px;
+  margin-bottom: 26px;
+  box-shadow: 0 10px 30px 0px rgba(57, 71, 82, 0.12);
+}
+
+.input {
+  display: block;
+  width: 100%;
+  background: transparent;
+  font-family: Josefin Sans;
+  font-size: 16px;
+  line-height: 1.2;
+  border: none;
+  outline: none;
+  height: 46px;
+  padding: 0 20px 0 23px;
+}
+
+.ion-text-center {
+  --ion-background-color: rgb(60, 0, 88);
+  --ion-text-color: rgb(255, 255, 255);
+}
+
+.img-task {
+  width: 100px;
+  height: 100px;
+}
+
+.img-calculator {
+  width: 100px;
+  height: 100px;
+}
+
+.img-instruction {
+  width: 100px;
+  height: 100px;
+}
+
+
+
+
+
+.tulisan-calculator {
+  font-size: 12px;
+  color: rgb(0, 0, 0);
+  font-weight:bold;
+  text-align: center;
+}
+
+
+.tulisan-task {
+  font-size: 12px;
+  color: rgb(0, 0, 0);
+  font-weight:bold;
+  text-align: center;
+}
+
+
+.tulisan-instruction {
+  font-size: 12px;
+  color: rgb(0, 0, 0);
+  font-weight:bold;
+  text-align: center;
+}
+

@@ -1,0 +1,177 @@
+<ion-header [translucent]="true">
+  <ion-toolbar class="ion-text-center">
+    <ion-title>Instruction</ion-title>
+    <ion-buttons slot="start">
+      <ion-menu-button menu="main-menu"></ion-menu-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-card class="card">
+        
+
+    <video width="100%" height="50%" controls="controls" preload="metadata" autoplay="autoplay"
+    webkit-playsinline="webkit-playsinline" class="videoPlayer">
+
+    <source src="assets/tutorialfish.mp4" type="video/mp4" /></video>
+    
+  </ion-card>
+
+  <ion-card class="card1">
+    <ion-slides #sliders (ionSlidesDidLoad)='slidesDidLoad(sliders) 'pager='true' [option]='slideOpts'>
+
+   
+     <ion-slide>
+       <ion-grid>
+         <ion-row>
+          <p class="tajuk1">1. Remove tank/aquarium from the box</p>
+         </ion-row>
+         <ion-row> <img src="assets/img/step1.jpg" height="100%" alt="" srcset="">
+        </ion-row>
+        <ion-row>
+          <p class="ayat1">- Carefully remove your tank from its box and place in a safe spot.</p>
+                <p class="ayat1">- Build your stand (if needed)
+                  at this point.</p>
+                <p class="ayat1">- While you’re able to get to the back of aquarium easily, add your aquarium
+                  background if you have purchased one.</p>
+                <p class="ayat1">- If your tank comes with a light, ensure that it is working
+                  by plugging in and turning on.</p>
+                <p class="ayat1">- You may also want to wipe down the inside of the tank with a
+                  damp cloth (free of any chemicals or soaps) to ensure there is no dust.</p>
+        </ion-row>
+       </ion-grid>
+     </ion-slide>
+
+
+
+     <ion-slide>
+      <ion-grid>
+        <ion-row>
+         <p class="tajuk2">2. Put your tank /aquarium in position</p>
+        </ion-row>
+        <ion-row> <img src="assets/img/step2.jpg" height="100%" alt="" srcset="">
+       </ion-row>
+       <ion-row>
+         <p class="ayat2">- Once you have built your stand and added your background, place your tank in its designated area.
+           </p>
+            <p class="ayat2">- Doing this now will be much easier and safer than when it is full of water and very heavy.</p>
+       </ion-row>
+      </ion-grid>
+      </ion-slide>
+
+
+      <ion-slide>
+        <ion-grid>
+          <ion-row>
+           <p class="tajuk3">3. Rinse all gravel and ornaments</p>
+          </ion-row>
+          <ion-row> <img src="assets/img/step3.jfif" height="100%" alt="" srcset="">
+         </ion-row>
+         <ion-row>
+           <p class="ayat3">- With some hot water (free of any chemicals or soaps), thoroughly rinse your gravel and any ornaments
+              you have purchased.</p>
+                <p class="ayat3">- This will ensure they are free of dust and any paint.</p>
+                <p class="ayat3">- Place them in the tank by
+                  adding the gravel slowly and carefully, to ensure it doesn’t hit the bottom of the tank too hard and
+                   cause damage.</p>
+         </ion-row>
+        </ion-grid>
+      </ion-slide>
+
+
+      <ion-slide>
+        <ion-grid>
+          <ion-row>
+           <p class="tajuk4">4. Fill your tank</p>
+          </ion-row>
+          <ion-row> <img src="assets/img/step4.jfif" height="100%" alt="" srcset="">
+         </ion-row>
+         <ion-row>
+           <p class="ayat4">- Fill your tank with tap water.</p>
+              <p class="ayat4">- You may want to use a hose if possible.</p>
+              <p class="ayat4">- Begin filling the tank slowly
+                to avoid any cloudiness from your gravel.</p>
+         </ion-row>
+        </ion-grid>
+      </ion-slide>
+
+
+      <ion-slide>
+        <ion-grid>
+          <ion-row>
+           <p class="tajuk5">5. Turn on filter (and heater if applicable)</p>
+          </ion-row>
+          <ion-row> <img src="assets/img/step5.jpg" height="100%" alt="" srcset="">
+         </ion-row>
+         <ion-row>
+           <p class="ayat5">- Now is the time to turn on all electrical equipment associated with your tank (do NOT do this beforehand
+              as this will damage your electrical equipment).</p>
+              <p class="ayat5">-  The light can stay off for now if you would prefer.</p>
+              <p class="ayat5">- As a general rule, only leave your light on for up to eight hours per day, as any longer may promote
+                 algae growth.</p>
+         </ion-row>
+        </ion-grid>
+      </ion-slide>
+
+
+      <ion-slide>
+        <ion-grid>
+          <ion-row>
+           <p class="tajuk6">6. Add in treatments</p>
+          </ion-row>
+          <ion-row> <img src="assets/img/step6.jpg" height="100%" alt="" srcset="">
+         </ion-row>
+         <ion-row>
+           <p class="ayat6">- Read all instructions on your treatment bottles to ensure you are adding the
+              right dosage to your tank.</p>
+               <p class="ayat6">- Add in all treatments now.</p>
+               <p class="ayat6">- Water conditioner and a biofilter product to establish beneficial bacteria
+                are a must.</p>
+         </ion-row>
+        </ion-grid>
+      </ion-slide>
+
+
+      <ion-slide>
+        <ion-grid>
+          <ion-row>
+           <p class="tajuk7">7. Let the tank cycle</p>
+          </ion-row>
+          <ion-row> <img src="assets/img/step7.jpg" height="100%" alt="" srcset="">
+         </ion-row>
+         <ion-row>
+           <p class="ayat7">- Allow your tank to cycle and create a healthy biological filter before adding in any fish.
+             </p>
+           <p class="ayat7">- This may take up to one month.</p>
+           <p class="ayat7">- To begin the cycle, add a good pinch of fish food to the
+            water; this will break down into ammonia and products promoting bacteria will start to act.</p>
+         </ion-row>
+        </ion-grid>
+      </ion-slide>
+
+
+      <ion-slide>
+        <ion-grid>
+          <ion-row>
+           <p class="tajuk8">8. Keep testing your water</p>
+          </ion-row>
+          <ion-row> <img src="assets/img/step8.jpg" height="100%" alt="" srcset="">
+         </ion-row>
+         <ion-row>
+           <p class="ayat8">- Once you have added fish to your new tank, the added waste fish produce could cause some more
+              ammonia to reappear.</p>
+           <p class="ayat8">- The beneficial bacteria will continue to consume ammonia, however, it’s
+            important to keep an eye on this while the tank finishes establishing itself.</p>
+           <p class="ayat8">- Reacting to any
+            necessary changes will help keep your fishy family members safe and healthy.</p>
+         </ion-row>
+        </ion-grid>
+      </ion-slide>
+
+
+   </ion-slides>
+   </ion-card>
+
+</ion-content>

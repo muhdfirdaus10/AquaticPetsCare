@@ -1,0 +1,201 @@
+<ion-header [translucent]="true">
+  <ion-toolbar class="ion-text-center">
+    <ion-title>Library</ion-title>
+    <ion-buttons slot="start">
+      <ion-menu-button menu="main-menu"></ion-menu-button>
+    </ion-buttons>
+  </ion-toolbar>
+
+  <ion-toolbar>
+    <ion-segment mod="md" [(ngModel)]="segment" (ionChange)="segmentChanged($event)">
+      <ion-segment-button value="0">  
+        <img src="assets/img/fishicon.png" width="20%" height="40%">
+      
+        Animals
+      </ion-segment-button>
+      <ion-segment-button value="1">
+        <ion-icon name="bug"></ion-icon>
+        Deceased
+  </ion-segment-button>
+</ion-segment>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+
+  <ion-slides #slides pager="false" [options]="sliderOptions" (ionSlideDidChange)="slideShanged(slides)" (ionSlidesDidLoad)="slideShange(slides)">
+    <ion-slide>
+      <ion-grid>
+
+        <ion-row routerLink="/gold">
+        <ion-col>
+          <ion-card class="card1-1">
+              <img src="assets/img/goldfish.png" width="10%" height="10%">
+            </ion-card>
+        </ion-col>
+        <ion-col>
+          <ion-card class="card1-2">
+          <p class="gold1">GoldFish</p>
+        </ion-card>
+        </ion-col>
+      </ion-row>
+
+      <ion-row routerLink="/guppy">
+        <ion-col>
+          <ion-card class="card2-1">
+              <img src="assets/img/guppies.png" width="10%" height="10%">
+            </ion-card>
+        </ion-col>
+        <ion-col>
+          <ion-card class="card2-2">
+          <p class="gold2">Guppies</p>
+        </ion-card>
+        </ion-col>
+      </ion-row>
+
+      <ion-row routerLink="/angel">
+        <ion-col>
+          <ion-card class="card3-1">
+              <img src="assets/img/angelfish.png" width="10%" height="10%">
+            </ion-card>
+        </ion-col>
+        <ion-col>
+          <ion-card class="card3-2">
+          <p class="gold3">Angelfish</p>
+        </ion-card>
+        </ion-col>
+      </ion-row>
+
+      <ion-row routerLink="/betta">
+        <ion-col>
+          <ion-card class="card4-1">
+              <img src="assets/img/bettafish.png" width="10%" height="10%">
+            </ion-card>
+        </ion-col>
+        <ion-col>
+          <ion-card class="card4-2">
+          <p class="gold4">Betta Fish</p>
+        </ion-card>
+        </ion-col>
+      </ion-row>
+
+      <ion-row routerLink="/molly">
+        <ion-col>
+          <ion-card class="card4-1">
+              <img src="assets/img/mollies.png" width="10%" height="10%">
+            </ion-card>
+        </ion-col>
+        <ion-col>
+          <ion-card class="card4-2">
+          <p class="gold4">Mollies</p>
+        </ion-card>
+        </ion-col>
+      </ion-row>
+
+      </ion-grid>
+
+    </ion-slide>
+
+
+
+
+
+
+
+    <ion-slide>
+      <ion-grid>
+        <ion-row>
+          <ion-card routerLink="/deseases01" class="card">
+            <ion-col>
+              <img src="assets/img/tuberculosis.jpg" width="10%" height="10%">
+            </ion-col>
+            <ion-col>
+              <p class="tajuk1">Tuberculosis</p>
+            </ion-col>
+          </ion-card>
+        </ion-row>
+
+        <ion-row>
+          <ion-card routerLink="/deseases02" class="card">
+            <ion-col>
+              <img src="assets/img/mouthfungus.jpg" width="10%" height="10%">
+            </ion-col>
+            <ion-col>
+              <p class="tajuk2">Mouth Fungus</p>
+            </ion-col>
+          </ion-card>
+        </ion-row>
+
+        <ion-row>
+          <ion-card routerLink="/deseases03" class="card">
+            <ion-col>
+              <img src="assets/img/finrot.jpg" width="10%" height="10%">
+            </ion-col>
+            <ion-col>
+              <p class="tajuk3">Fin Rot & Tail Rot</p>
+            </ion-col>
+          </ion-card>
+        </ion-row>
+
+        <ion-row>
+          <ion-card routerLink="/deseases04" class="card">
+            <ion-col>
+              <img src="assets/img/anchorworm.jpg" width="10%" height="10%">
+            </ion-col>
+            <ion-col>
+              <p class="tajuk4">Anchor Worm</p>
+            </ion-col>
+          </ion-card>
+        </ion-row>
+
+        <ion-row>
+          <ion-card routerLink="/deseases05" class="card">
+            <ion-col>
+              <img src="assets/img/dropsyfish.jpg" width="10%" height="10%">
+            </ion-col>
+            <ion-col>
+              <p class="tajuk5">Dropsy</p>
+            </ion-col>
+          </ion-card>
+        </ion-row>
+
+        <ion-row>
+          <ion-card routerLink="/deseases06" class="card">
+            <ion-col>
+              <img src="assets/img/costia.jpg" width="10%" height="10%">
+            </ion-col>
+            <ion-col>
+              <p class="tajuk6">Costia</p>
+            </ion-col>
+          </ion-card>
+        </ion-row>
+
+        <ion-row>
+          <ion-card routerLink="/deseases07" class="card">
+            <ion-col>
+              <img src="assets/img/hexamita.jpg" width="10%" height="10%">
+            </ion-col>
+            <ion-col>
+              <p class="tajuk7">Hexamita</p>
+            </ion-col>
+          </ion-card>
+        </ion-row>
+
+        <ion-row>
+          <ion-card routerLink="/deseases08" class="card">
+            <ion-col>
+              <img src="assets/img/chilodonella.jfif" width="10%" height="10%">
+            </ion-col>
+            <ion-col>
+              <p class="tajuk8">Chilodonella</p>
+            </ion-col>
+          </ion-card>
+        </ion-row>
+
+        
+      </ion-grid>
+    </ion-slide>
+  </ion-slides>
+
+ 
+</ion-content>

@@ -1,0 +1,100 @@
+<ion-app>
+<ion-header [translucent]="true">
+  <ion-toolbar class="ion-text-center">
+    <ion-title>Home</ion-title>
+    <ion-buttons slot="start">
+      <ion-menu-button menu="main-menu"></ion-menu-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content [fullscreen]="true">
+  <ion-card>
+ <ion-slides #sliders (ionSlidesDidLoad)='slidesDidLoad(sliders) 'pager='true' [option]='slideOpts'>
+
+  <ion-slide>
+    <img src="assets/img/ikanslide4.jpg" height="100%" alt="" srcset="">
+  </ion-slide>
+  <ion-slide>
+    <img src="assets/img/ikanslide5.jpg" alt="" srcset="">
+  </ion-slide>
+  <ion-slide>
+    <img src="assets/img/ikanslide6.jpg" alt="" srcset="">
+  </ion-slide>
+</ion-slides>
+</ion-card>
+
+  <ion-grid>
+
+    <ion-row>
+      <ion-col>
+
+       
+        <ion-button fill="solid" color="danger" expand="full" routerLink="/task" class="img-task">
+          <ion-grid>
+            <ion-row>
+              <centre>
+                <img src="assets/img/library.png" width=75% height="100%">
+              </centre>
+            </ion-row>
+            <ion-row>
+              <p class="tulisan-task">Library</p>
+            </ion-row>
+          </ion-grid>
+          </ion-button>
+         
+
+      </ion-col>
+      <ion-col>
+
+        
+        <ion-button fill="solid" color="danger" expand="full" routerLink="/calculator" class="img-calculator">
+          <ion-grid>
+            <ion-row>
+              <centre>   
+              <img src="assets/img/calculator.png" width=50% height="100%">
+            </centre>
+            </ion-row>
+            <ion-row>
+              <p class="tulisan-calculator">Calculator</p>
+            </ion-row>
+          </ion-grid>
+        </ion-button>
+    
+
+      </ion-col>
+    </ion-row>
+
+      <ion-row>
+        <ion-col></ion-col>
+        <ion-col>
+
+
+          <ion-button fill="solid" color="danger" expand="full" routerLink="/instruction" class="img-instruction">
+            <ion-grid>
+              <ion-row>
+                <centre>
+                  <img src="assets/img/information.webp" width=55% height="100%">
+                </centre>
+              </ion-row>
+              <ion-row>
+                <p class="tulisan-instruction">Instruction</p>
+              </ion-row>
+            </ion-grid>
+            </ion-button>
+
+        </ion-col>
+
+        <ion-col></ion-col>
+        
+
+      </ion-row>
+    
+  </ion-grid>
+ 
+  
+ 
+ 
+</ion-content>
+</ion-app>

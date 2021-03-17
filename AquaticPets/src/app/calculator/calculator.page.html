@@ -1,0 +1,55 @@
+<ion-header [translucent]="true">
+  <ion-toolbar class="ion-text-center">
+    <ion-title>Calculator</ion-title>
+    <ion-buttons slot="start">
+      <ion-menu-button menu="main-menu"></ion-menu-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+
+   <ion-list>
+     <ion-item>
+       <ion-label position="floating" color="primary">Length (cm)</ion-label>
+       <ion-input placeholder="Length" type="number" [(ngModel)] = "length"></ion-input>
+     </ion-item>
+
+     <ion-item>
+       <ion-label position="floating" color="primary">Height (cm)</ion-label>
+       <ion-input placeholder="Height" type="number" [(ngModel)] = "height"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="floating" color="primary">Width (cm)</ion-label>
+      <ion-input placeholder="Width" type="number" [(ngModel)] = "width"></ion-input>
+   </ion-item>
+
+   <ion-item>
+    <ion-label position="floating" color="primary">Glass Thickness (mm)</ion-label>
+    <ion-input placeholder="Thickness" type="number" [(ngModel)] = "thick"></ion-input>
+ </ion-item>
+
+
+<ion-button expand="full" color="primary" (click)="calc()">Calculate</ion-button>
+   <ion-item>
+     <ion-grid>
+      <ion-row>
+      <p class="result">Result</p>
+      </ion-row>
+      <ion-row>
+      <span>{{result}}</span>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+      </ion-col>
+      <ion-col>
+      <span>{{result1}}</span>
+    </ion-col>
+    </ion-row>
+     </ion-grid>
+   
+ </ion-item>
+</ion-list>
+
+
+</ion-content>
